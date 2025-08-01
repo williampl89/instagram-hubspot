@@ -2,8 +2,8 @@ require('dotenv').config();
 const express = require('express');
 const session = require('express-session');
 const opn = require('open');
-const webhookRoutes = require('./router/webhook');
-const hubspotService = require('./services/hubspot');
+const webhookRoutes = require('./router/webhook.js');
+const hubspotService = require('./services/hubspot.js');
 
 const app = express();
 app.use(express.json());
